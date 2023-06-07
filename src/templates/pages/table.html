@@ -1,0 +1,23 @@
+<div class="overflow-x-auto">
+    <table class="table table-xs table-pin-rows table-pin-cols">
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in result_list %}
+                <tr>
+                    {% for column_number in column_indexlist %}
+                        <th>row[column_number]</th>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

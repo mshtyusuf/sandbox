@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="ms-20">
+    <button class="btn btn-outline btn-sm btn-primary m-1">Run</button>
+</div>
+<div class="ms-8">
+    <textarea class="textarea textarea-sm h-80 w-5/6 max-w-x textarea-primary m-1" placeholder="Write your SQL query here ..."></textarea>
+</div>
+<div class="ms-8">
+    <iframe src="{% url 'result' %}" class="h-80 w-5/6 max-w-x" title="result"></iframe>
+</div>
+
+
+{% endblock %}
